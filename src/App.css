@@ -131,30 +131,30 @@
   display: flex;
   justify-content: center;
 
-    position: relative;
+    
 }
-.container-input input{
+.input-home{
   border-radius: 20px;
   height: 35px;
   text-align: center;
   box-shadow:  2px 2px 8px gray;
   border: none;
   outline: none;
+
 }
-.container-input figure{
-  position: absolute;
+figure{
+
   border-radius: 50%;
   background: #DC143C;
    width: 35px;
   height: 35px;
-  right: 46px;
-  bottom: 0;
   padding: 2px;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   border:  1px solid white;
+  transform: translate(-30px, 0px);
 }
 .button-send{
 
