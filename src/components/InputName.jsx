@@ -6,6 +6,7 @@ import imageHome from '/personaje.png'
 import send from '/send.svg'
 import music from '../audio/intro.mp3'
 
+
 const InputName = () => {
 
     const userName = useSelector(state => state.userName)
