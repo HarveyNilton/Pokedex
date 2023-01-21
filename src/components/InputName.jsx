@@ -29,7 +29,10 @@ const InputName = () => {
                 <h5>Give me your name to start</h5>
                 <div className="container-input">
                   <input  type="text" value={userNameValue} onChange={e => setUserNameValue(e.target.value)} />
-                  <img className='button-send' onClick={clickLoad} src={send} alt="" /> 
+                  <figure>
+                     <img className='button-send' onClick={clickLoad} src={send} alt="" /> 
+                  </figure>
+                 
                 </div>
                 
             </div>

@@ -134,25 +134,35 @@
     position: relative;
 }
 .container-input input{
-  border-radius: 20px 0px 0px 20px;
+  border-radius: 20px;
   height: 35px;
   text-align: center;
   box-shadow:  2px 2px 8px gray;
   border: none;
   outline: none;
 }
-.button-send{
+.container-input figure{
   position: absolute;
   border-radius: 50%;
   background: #DC143C;
-  width: 35px;
+   width: 35px;
   height: 35px;
-  padding: 5px;
-  right: 20px;
+  right: 46px;
   bottom: 0;
- cursor: pointer;
+  padding: 2px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border:  1px solid white;
 }
-.button-send:hover{
+.button-send{
+
+ width: 20px;
+ height: 20px;
+ 
+}
+.container-input figure:hover{
   box-shadow:  2px 2px 8px gray;
 }
 
