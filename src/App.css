@@ -81,7 +81,7 @@
   width: 100vw;
   height: 82vh;
  background: #c5c5c59f;
- background-image: url('/public/fondo-card.jpg');
+ background-image: url('/fondo-card.jpg');
 
 }
 .container-card-home{
@@ -96,6 +96,7 @@
   box-shadow: 2px 2px 8px grey;
   border-radius: 20px;
   background: white;
+  user-select: none;
 }
 .container-card-home h5{
   text-align: center;
@@ -161,7 +162,7 @@
 
 .container-pokedex{
   margin-top: 18vmin;
-  background-image: url('/public/fondo-card.jpg');
+  background-image: url('/fondo-card.jpg');
   color: white;
   
 }
@@ -193,7 +194,7 @@ color: #DC143C;
 .pokedex-card{
   width: 250px;
   height: 400px;
-  background-image: url('/public/fondo-card.jpg');
+  background-image: url('/fondo-card.jpg');
   background-repeat: no-repeat;
   position: relative;
   padding: 10px;
@@ -213,14 +214,15 @@ color: #DC143C;
   
 }
 .input-pokedex form{
-  width: 400px;
+  min-width: 320px;
+  
 }
 
 
 
 .input-pokedex input[type=text] {
 
-  background-image: url('/public/search.png');
+  background-image: url('/search.png');
   width: 130px;
   background-size: 40px 40px;
   text-align: center;

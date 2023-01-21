@@ -21,7 +21,7 @@ const Pokedex = () => {
         <div className='container-pokedex'>
             <h1>Pokédex</h1>
             <audio className='audio' autoPlay src={music}></audio>
-            <h5>Welcome: <span>{userName}</span>,<p>here you can find your favorite Pokemon</p> </h5>
+            <h5>Welcome: <span>{userName}</span><p>here you can find your favorite Pokemon</p> </h5>
             <div>
                 <form className='input-pokedex'>
                      <form >
