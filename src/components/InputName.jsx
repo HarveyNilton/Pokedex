@@ -20,7 +20,7 @@ const InputName = () => {
     }
     return (
         <div className='home'>
-            <audio className='audio' autoPlay src={music}></audio>
+           {/*<audio className='audio' autoPlay src={music}></audio> */}
             <div className='container-card-home'>
                 <div className='container-image-home'>
                     <img className='imagen-home' src={imageHome} alt="" />

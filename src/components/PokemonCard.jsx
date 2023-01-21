@@ -12,7 +12,7 @@ const PokemonCard = ({url}) => {
         axios.get(url).then(res=> setPokemon(res.data))
     },[])
 
-    console.log(pokemon);
+
     return (
         <div className='pokedex-card' onClick={()=> navigate(`/pokemon/${pokemon.id}`)}>
               <img src={pokemon.sprites?.other.dream_world.front_default} alt="" />
