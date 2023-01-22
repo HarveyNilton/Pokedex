@@ -23,27 +23,27 @@ const PokemonCard = ({url}) => {
                  <div className='container-stats'>
                     <div className='item-stats'>
                         <p className='name-stats'>{pokemon.stats?.[0].stat.name}</p>
-                        <h3 className='valor-stats'>{Number(pokemon.stats?.[0].base_stat).toString()}</h3>
+                        <h3 translate='no'  className='valor-stats'>{pokemon.stats?.[0].base_stat}</h3>
                     </div >
                     <div className='item-stats'>
                         <p className='name-stats'>{pokemon.stats?.[1].stat.name}</p>
-                        <h3 className='valor-stats'>{Number(pokemon.stats?.[1].base_stat).toString()}</h3>
+                        <h3 translate='no'  className='valor-stats'>{pokemon.stats?.[1].base_stat}</h3>
                     </div>
                     <div className='item-stats'>
                         <p className='name-stats'>{pokemon.stats?.[2].stat.name}</p>
-                        <h3 className='valor-stats'>{Number(pokemon.stats?.[2].base_stat).toString()}</h3>
+                        <h3 translate='no'  className='valor-stats'>{pokemon.stats?.[2].base_stat}</h3>
                     </div>
                     <div className='item-stats'>
                         <p className='name-stats'>{pokemon.stats?.[3].stat.name}</p>
-                        <h3 className='valor-stats'>{Number(pokemon.stats?.[3].base_stat).toString()}</h3>
+                        <h3 translate='no'  className='valor-stats'>{pokemon.stats?.[3].base_stat}</h3>
                     </div>
                     <div className='item-stats'>
                         <p className='name-stats'>{pokemon.stats?.[4].stat.name}</p>
-                        <h3 className='valor-stats'>{Number(pokemon.stats?.[4].base_stat).toString()}</h3>
+                        <h3 translate='no'  className='valor-stats'>{pokemon.stats?.[4].base_stat}</h3>
                     </div>
                     <div className='item-stats'>
                         <p className='name-stats'>{pokemon.stats?.[5].stat.name}</p>
-                        <h3 className='valor-stats'>{Number(pokemon.stats?.[5].base_stat).toString()}</h3>
+                        <h3 translate='no' className='valor-stats'>{pokemon.stats?.[5].base_stat}</h3>
                     </div>
                  </div>
             </div>
