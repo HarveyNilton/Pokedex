@@ -16,7 +16,7 @@ const Pokedex = () => {
     const navigate = useNavigate()
 
     useEffect(()=>{
-    axios.get('https://pokeapi.co/api/v2/pokemon')
+    axios.get('https://pokeapi.co/api/v2/pokemon/?offset=0&limit=1279')
     .then(res => setPokemon(res.data.results))
 
     axios.get(`https://pokeapi.co/api/v2/type/`)
@@ -24,10 +24,11 @@ const Pokedex = () => {
 
     },[])
 
- 
-
     const search=() =>{
-        navigate(`/pokemon/${inputSearch.toLowerCase()}`)
+        if (inputSearch !== ''  ) {
+             navigate(`/pokemon/${inputSearch.toLowerCase()}`)
+        }
+       
     }
 
     const filterType =(e)=>{
@@ -35,7 +36,15 @@ const Pokedex = () => {
         .then(res => setPokemon(res.data.pokemon))
     }
 
-    console.log(pokemon);
+
+    const [page ,setPage] = useState(1)
+    const pokekarPage = 8
+    const lastIndex = page * pokekarPage
+    const firstIndex = lastIndex-pokekarPage
+    const pokeSlice = pokemon.slice(firstIndex,lastIndex)
+
+    const totalPage = Math.ceil(pokemon.length/pokekarPage)
+
 
     return (
         <div className='container-pokedex'>
@@ -63,9 +72,17 @@ const Pokedex = () => {
                 
                
             </div>
+
+            <div className='container-paginacion'>
+
+                <button onClick={()=>setPage(page-1)} disabled={page===1}>{'<'}</button>
+                {page} / {totalPage}
+                <button onClick={()=>setPage(page+1)} disabled={page===totalPage}>{'>'}</button>
+
+            </div>
             <ul className='ul-card'>
                 {
-                    pokemon.map(pokemon =>(
+                    pokeSlice?.map(pokemon =>(
                         <PokemonCard url = {pokemon.url ? pokemon.url : pokemon.pokemon.url} key={pokemon.url ? pokemon.url : pokemon.pokemon.url}/>
                     ))
                 }

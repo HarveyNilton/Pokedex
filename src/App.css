@@ -288,6 +288,31 @@ figure {
   background: #ffffff9d;
 }
 
+.container-paginacion{
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #161616;
+}
+
+.container-paginacion button{
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  border: none;
+  background: #ffffff9d;
+  font-size: 2rem;
+  cursor: pointer;
+  
+}
+
+.container-paginacion button:hover{
+  background: #DC143C;
+  box-shadow: 2px 2px 8px gray;
+}
+
 option {
   text-transform: uppercase;
   cursor: pointer;
@@ -619,7 +644,7 @@ option {
   overflow-y: scroll;
 }
 
-.movements-item h3 {
+.movements-item ul {
   font-weight: 400;
   text-align: center;
 }

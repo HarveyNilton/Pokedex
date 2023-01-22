@@ -15,7 +15,6 @@ const PokedexDatail = () => {
             .then(res => setpkemon(res.data))
     }, [])
 
-    console.log(pokemon);
     return (
         <div className='container-pokedexDatail'>
             <div className='sub-container-pokeDatail'>
@@ -74,7 +73,10 @@ const PokedexDatail = () => {
                         <div className='movements-item'>
                         {
                             pokemon.moves?.map(moves=>(
-                                <h3>{moves.move.name}</h3>
+                                <ul key={moves.move.name}>
+                                    <li>{moves.move.name}</li>
+                                </ul>
+    
                             ))
                         }
                         </div>
