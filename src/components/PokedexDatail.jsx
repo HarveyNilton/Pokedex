@@ -31,10 +31,10 @@ const PokedexDatail = () => {
                         <img className='img-pokemon' src={pokemon.sprites?.other.dream_world.front_default} alt="" />
                             <div className='container-num'>
                                 <div className='item-num'>
-                                    <p>{Number(pokemon.weight)}<br /><span>Weight</span></p>
+                                    <p translate='no'>{pokemon.weight}<br /><span>Weight</span></p>
                                 </div>
                                 <div  className='item-num'>
-                                    <p>{Number(pokemon.height)}<br /><span>Height</span></p>
+                                    <p translate='no'>{pokemon.height}<br /><span>Height</span></p>
                                 </div >
                             </div>
                             <h3>{pokemon.name}</h3>
